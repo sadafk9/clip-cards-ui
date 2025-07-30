@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clip-Path</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+</head>
+
+<style>
+   
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+      
+       
+    }
+    .cards{
+       text-align: center;
+      background-color: black;
+      color: white;
+       margin: 15px;
+       padding: 5px;
+        width: 300px;
+        height: 300px;
+        border: 2px solid black;
+        clip-path: circle(50% at 50% 50%);
+        border-radius: 50%;
+        transform: transform 0.5 ease;
+    }
+    .cards:hover{
+        transform: scale(1.03);
+    }
+    i{
+        font-size: 45px;
+        margin-top: 30px;
+    }
+    button{
+        margin-top: 10px;
+        background-color: black;
+        transition: all 0.3s ease;
+        color: white;
+        font-weight: bold;
+        border: none;
+        border-radius: 20px;
+        width: 80px;
+        height: 35px;
+    }
+    button:hover{
+        transform: scale(1.04);
+    }
+    #o{
+      color: rgb(194, 146, 83);     
+    }
+    #oo{
+        background-color: rgb(194, 146, 83);
+    }
+      #oo:hover{
+        background-color: white;
+        color: rgb(194, 146, 83);    
+        border: 1.5px solid rgb(194, 146, 83);
+ 
+    }
+    #one{
+       color: palevioletred;
+       
+    }
+    #onee{
+        background-color: palevioletred;
+        font: bold;
+    }
+    #onee:hover{
+        background-color: white;
+        color: palevioletred;
+        border: 1.5px solid palevioletred;
+
+    }
+    #two{
+        color: purple;
+    }
+    #twoo{
+        background-color: purple;
+    }
+    #twoo:hover{
+        background-color: white;
+        color: purple;
+        border: 1.5px solid purple;
+    }
+    #three{
+        color: orange;
+    }
+    #threee{
+        background-color: orange;
+    }
+    #threee:hover{
+        background-color: white;
+        color: orange;
+        border: 1.5px solid orange;
+    }
+    #four{
+        color: green;
+    }
+    #fourr{
+        background-color: green;
+    }
+    #fourr:hover{
+        background-color: white;
+        color: green;
+        border: 1.5px solid green;
+    }
+    #five{
+        color: teal;
+    }
+    #fivee{
+        background-color: teal;
+    }
+    #fivee:hover{
+        background-color: white;
+        color: teal;
+        border: 1.5px solid teal;
+    }
+    #six{
+        color: brown;
+    }
+    #sixx{
+        background-color: brown;
+    }
+    #sixx:hover{
+        background-color: white;
+        color: brown;
+        border: 1.5px solid brown;
+    }
+    #seven{
+        color: blue;
+    }
+    #sevenn{
+        background-color: blue;
+    }
+    #sevenn:hover{
+        background-color: white;
+        color: blue;
+        border: 1.5px solid blue;
+    }
+    #oo1{
+       border: 2px solid rgb(182, 124, 47);
+    }
+    #bo1{
+        border: 2px solid palevioletred;
+    }
+    #bo2{
+        border: 2px solid purple;
+    }
+    #bo3{
+        border: 2px solid orange;
+
+    }
+    #bo4{
+        border: 2px solid green;
+
+    }
+    #bo5{
+        border: 2px solid teal;
+
+    }
+    #bo6{
+        border: 2px solid brown;
+
+    }
+    #bo7{
+        border: 2px solid blue;
+    }
+
+  
+</style>
+<body>
+    <div class="container">
+        <div id="oo1" class="cards">
+           
+            <i id="o" class="fa-solid fa-wheelchair"></i>
+            <h1>wheelchair</h1>
+            <p>A wheelchair is a manually operated or power-driven device designed primarily for use by an individual </p>
+            <button  id="oo">Review</button>
+        </div>
+        <div id="bo1" class="cards">
+            
+            <i id="one" class="fa-solid fa-hospital"></i>
+            <h1>Hospital</h1>
+            <p>A place where people who are ill or injured are treated and taken care of by doctors and nurses.</p>
+            <button id="onee">Review</button>
+        </div>
+        <div id="bo2" class="cards">
+
+            <i id="two" class="fa-solid fa-virus"></i>
+            <h1>Virus</h1>
+            <p>An infectious microbe consisting of a segment of nucleic acid (either DNA or RNA) surrounded by a protein coat.</p>
+            <button id="twoo">Review</button>
+        </div>
+        <div id="bo3" class="cards">
+           
+            <i id="three" class="fa-solid fa-syringe"></i>
+            <h1>Syringe</h1>
+            <p>A medical syringe, as used to administer a vaccine or draw blood.</p>
+            <button id="threee">Review</button>
+        </div>
+        <div id="bo4" class="cards">
+            
+            <i id="four" class="fa-solid fa-capsules"></i>
+            <h1>Capsule</h1>
+            <p>A shell usually of gelatin for packaging something (such as a drug or vitamins).</p>
+            <button id="fourr">Review</button>
+        </div>
+        <div id="bo5" class="cards">
+            
+            <i id="five" class="fa-solid fa-bandage"></i>
+           <h1>Bandage</h1>
+            <p>A strip of fabric used especially to cover, dress, and bind up wounds.</p>
+            <button id="fivee">Review</button>
+        </div>
+        <div id="bo6" class="cards">
+            
+            <i id="six" class="fa-solid fa-skull"></i>
+            <h1>Skull</h1>
+            <p>the skeleton of the head of a vertebrate forming protects the brain and chief sense organs and supports the jaws.</p>
+            <button id="sixx">Review</button>
+        </div>
+        <div id="bo7" class="cards">
+            
+            <i id="seven" class="fa-solid fa-tooth"></i>
+            <h1>Tooth</h1>
+            <p>Human teeth include incisors, canines, premolars, and molars. </p>
+            <button id="sevenn">Review</button>
+        </div>
+    </div>
+</body>
+</html>
